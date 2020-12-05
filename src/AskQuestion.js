@@ -62,7 +62,7 @@ class QuestionForm extends React.Component {
                     Email:
                     <input type="text" value={this.state.email} onChange={this.handleChangeEmail} />
                 </label>
-                <input type="submit" value="Submit" />
+                <input class="button" type="submit" value="Submit" />
             </form>
         );
     }

@@ -15,12 +15,12 @@ class App extends Component {
     return (
         <HashRouter>
             <div>
-                <h1>EPHS Forum</h1>
+                <h1>EPHS TECH SUPPORT FORUM</h1>
                 <ul className="header">
                     <li><NavLink exact to="/">Home</NavLink></li>
-                    <li><NavLink to="/questions">Browse Questions</NavLink></li>
                     <li><NavLink to="/ask-question">Ask a Question</NavLink></li>
                     <li><NavLink to="/unanswered">Unanswered Questions</NavLink></li>
+                    <li><NavLink to="/questions">All Questions</NavLink></li>
                 </ul>
                 <div className="content">
                     <Route exact path="/" component={Home}/>
