@@ -1,10 +1,14 @@
+/*
+ * EPHS red color: #d7282f
+ */
 body {
-  background-color: coral;
+  background-color: whitesmoke;
   padding: 20px;
   margin: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
-h1, h2, p, ul, li {
-  font-family: "Verdana";
+h1 {
+  text-align: center;
 }
 ul.header li {
   display: inline;
@@ -13,26 +17,46 @@ ul.header li {
 }
 ul.header {
   background-color: #111;
+  text-align: center;
   padding: 0;
 }
 ul.header li a {
-  color: #FFF;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
 }
 .content {
-  background-color: #FFF;
+  background-color: white;
+  border-color: #d7282f;
+  border: 10%;
   padding: 20px;
 }
 .content h2 {
   padding: 0;
   margin: 0;
+  font-weight: bold;
 }
 .content li {
   margin-bottom: 10px;
 }
 .active {
-  background-color: #0099FF;
+  background-color: #d7282f;
+}
+.button {
+  background-color: #d7282f;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+label {
+  margin-right: 15px;
+}
+.question {
+  background-color: whitesmoke;
+  padding: 10px;
 }

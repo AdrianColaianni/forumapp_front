@@ -38,33 +38,34 @@ class QuestionDetail extends Component {
     }
 
 
-    render() {
-        if (this.state.filteredAnswers.length === 0){
-            return(
-                <div>
-                    <h1>Question: </h1>
-                <p>{this.state.filteredQuestion.content}</p>
-                <p>Time asked: {this.state.filteredQuestion.created_at}</p>
-                <h1>There are not yet any answers for this questions. </h1>
-                </div>
-            )
-        }
-        return(
-
-            <div>
-                <h1>Question: </h1>
-                <p>{ this.state.filteredQuestion.content }</p>
-                <p>Time asked: {this.state.filteredQuestion.created_at}</p>
-                <h1>Answers:</h1>
-                
-                {this.state.filteredAnswers.map(answer => (<ul>
-                    <li>
-                        <div>{answer.content}</div>
-                        <div>Answered At: {answer.created_at}</div>
-                    </li>
-                </ul>))}
-            </div>
-        )
-    }
+	render() {
+		if (this.state.filteredAnswers.length === 0){
+			return(
+				<div>
+					<h1>Question</h1>
+					<p class="question">{this.state.filteredQuestion.content}</p>
+					<p>Asked {this.state.filteredQuestion.created_at}</p>
+					<p>By {this.state.filteredQuestion.email}</p>
+					<h2>There are not yet any answers for this questions.</h2>
+				</div>
+			)
+		}
+		return(
+			<div>
+				<h1>Question</h1>
+				<p class="question">{this.state.filteredQuestion.content}</p>
+				<p>Asked {this.state.filteredQuestion.created_at}</p>
+				<p>By {this.state.filteredQuestion.email}</p>
+				<h2>Answers:</h2>
+				
+				{this.state.filteredAnswers.map(answer => (<ul>
+					<li>
+						<div>{answer.content}</div>
+						<div>Answered At: {answer.created_at}</div>
+					</li>
+				</ul>))}
+			</div>
+		)
+	}
 }
 export default QuestionDetail;
