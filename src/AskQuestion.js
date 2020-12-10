@@ -38,7 +38,7 @@ class QuestionForm extends React.Component {
     }
 
     handleSubmit(event) {
-        fetch(url.concat('/questions/'), {
+        fetch(url.concat('questions/'), {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
