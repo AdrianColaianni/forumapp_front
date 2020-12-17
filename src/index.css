@@ -3,7 +3,6 @@
  */
 body {
   background-color: whitesmoke;
-  padding: 20px;
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -19,6 +18,7 @@ ul.header {
   background-color: #111;
   text-align: center;
   padding: 0;
+  margin: 20px;
 }
 ul.header li a {
   color: white;
@@ -30,7 +30,9 @@ ul.header li a {
 .content {
   background-color: white;
   border-color: #d7282f;
-  border: 10%;
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 5px;
   padding: 20px;
 }
 .content h2 {
@@ -59,4 +61,20 @@ label {
 .question {
   background-color: whitesmoke;
   padding: 10px;
+}
+.card {
+  text-transform: capitalize;
+}
+.search {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+a:link {
+  color: #d7282f;
+}
+a:hover {
+  color: #75171b;
+}
+a:visited {
+  color: #ce5f63;
 }
